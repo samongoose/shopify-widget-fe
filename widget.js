@@ -1,7 +1,9 @@
-document.write('<html><body><h1 id="title"></h1></body></html>');
-
 function init() {
-  document.getElementById("title").innerHTML = "Hello World!";
+  var container = document.getElementById("SiteNav");
+  var content = document.createElement("li");
+  content.style.color = "red";
+  content.innerHTML = "Hello";
+  container.appendChild(content);
 }
 
 init();
